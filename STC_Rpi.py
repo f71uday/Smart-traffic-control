@@ -53,7 +53,7 @@ print stopTime4
 # green signal1 for time  till loadedjson[0] rest red 
 GPIO.output(S1G,GPIO.HIGH)
 GPIO.output(S2R,GPIO.HIGH)
-GPIO.output(S3R,GPIO.HIGH)
+GPIO.output(S3R,GPIO.HIGH
 GPIO.output(S4R,GPIO.HIGH)
 time.sleep(loaded_json[0]['id']/1000)
 # orange for 3 second signal one
@@ -63,6 +63,7 @@ time.sleep(3)
 GPIO.output(S1O,GPIO.LOW)
 GPIO.output(S1R,GPIO.HIGH)
 GPIO.output(S2G,GPIO.HIGH) 
+GPIO.output(S2R,GPIO.LOW)
 time.sleep(loaded_json[1]['id']/1000)
 #green signal2 for time loaded json[1] rest red 
 #orange for 3sec
