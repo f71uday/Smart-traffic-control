@@ -59,7 +59,9 @@ time.sleep(loaded_json[0]['id']/1000)
 # orange for 3 second signal one
 GPIO.output(S1O,GPIO.HIGH)
 GPIO.output(S1G,GPIO.LOW)
-time.sleep(3) 
+time.sleep(3)
+GPIO.output(S1R,GPIO.HIGH)
+GPIO.output(S2G,GPIO.HIGH) 
 #green signal2 for time loaded json[1] rest red 
 #orange for 3sec
 # green for  sigal3 json 2 rst red 
