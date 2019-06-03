@@ -7,9 +7,9 @@ GPIO.setmode(GPIO.BOARD)
 S1G = 8
 S1O = 10
 S1R = 12
-S2G = 22
-S2O = 24
-S2R =26
+S2G = 37
+S2O = 35
+S2R =33
 S3G =11
 S3O = 13
 S3R = 15
@@ -53,7 +53,7 @@ print stopTime4
 # green signal1 for time  till loadedjson[0] rest red 
 GPIO.output(S1G,GPIO.HIGH)
 GPIO.output(S2R,GPIO.HIGH)
-GPIO.output(S3R,GPIO.HIGH)
+GPIO.output(S3R,GPIO.HIGH) 	
 GPIO.output(S4R,GPIO.HIGH)
 time.sleep(loaded_json[0]['id']/1000)
 # orange for 3 second signal one
