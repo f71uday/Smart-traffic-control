@@ -29,7 +29,7 @@ GPIO.setup(S4G, GPIO.OUT,initial=0)
 GPIO.setup(S4O, GPIO.OUT,initial=0)
 GPIO.setup(S4R, GPIO.OUT,initial=0)
 
-API_ENDPOINT = "http://localhost:8080/Greeting"
+API_ENDPOINT = "http://192.168.0.11:8080/Greeting"
 
 r = requests.get(API_ENDPOINT)
 data = r.json()
